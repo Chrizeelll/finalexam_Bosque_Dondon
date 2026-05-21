@@ -45,13 +45,18 @@
                           @error('fname') <span class="text-danger">{{$message}}</span> @enderror
                         <div class="form-group col-12">
                           <label for="exampleInputPassword1">Address</label>
-                          <input type="text" class="form-control" id="address" name="address" placeholder="House No. Street Name, Brgy, City">
+                          <input type="text" class="form-control" id="address" name="add" placeholder="House No. Street Name, Brgy, City">
                         </div>
                           @error('address') <div class="text-danger">{{ $message }}</div> @enderror
                         <div class="form-group col-6">
                           <label for="exampleInputPassword1">Date of Birth</label>
                           <input type="date" class="form-control" id="dob" name="dob" placeholder="YYYY-MM-DD"> <br>
                           @error('dob') <div class="text-danger">{{ $message }}</div> @enderror
+                        </div>
+                        <div class="form-group col-12">
+                          <label for="exampleInputPassword1">Contact no</label>
+                          <input type="date" class="form-control" id="contact" name="contact" placeholder="Contact Number"> <br>
+                          @error('contact') <div class="text-danger">{{ $message }}</div> @enderror
                         </div>
                         <div class="form-group col-6">
                         </div>

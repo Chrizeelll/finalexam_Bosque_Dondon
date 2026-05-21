@@ -34,13 +34,14 @@
                                         </tr>
                                     </thead>
                                     <tbody  >
+                                        @foreach($employees as $employee)
                                         <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td>{{ $employee->fname }}</td>
+                                            <td>{{ $employee->lname }}</td>
+                                            <td>{{ $employee->mname }}</td>
+                                            <td>{{ $employee->add }}</td>
+                                            <td>{{ $employee->dob }}</td>
+                                            <td>{{ $employee->contact }}</td>
                                             <td> 
                                                 <a href="#" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Edit</a>
                                                 <a href="#" class="btn btn-danger btn-md active" role="button" aria-pressed="true">Delete</a>
