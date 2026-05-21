@@ -11,7 +11,7 @@ class employeecontroller extends Controller
     public function index()
     {   
         $employee = employeemngt::all();
-        return view ('employee.index', compact(employee));
+        return view ('employee.index', compact('employee'));
     }
 
     public function create()
