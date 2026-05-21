@@ -16,7 +16,7 @@
     <!-- Main content -->
     <div class="content">
         <div class="container-fluid">
-            <a href="{{ route('employee.create') }}" class="btn btn-info">Add New Employee</a> <br> <br>
+
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
@@ -50,6 +50,7 @@
                                         @endforeach
                                     </tbody>
                                 </table>
+                                <a href="{{ route('employee.create') }}" class="btn btn-info">Add New Employee</a> <br> <br>
                             </div>
                         </div>
                     </div>

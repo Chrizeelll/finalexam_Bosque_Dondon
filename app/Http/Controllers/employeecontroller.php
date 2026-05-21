@@ -27,7 +27,7 @@ class employeecontroller extends Controller
             'lname' => 'required',
             'add' => 'required',
             'dob' => 'required|date',
-            'contact' => 'required|string|max 11',
+            'contact' => 'required',
 
         ]);
     }
