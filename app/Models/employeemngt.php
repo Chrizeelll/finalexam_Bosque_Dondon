@@ -8,5 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class employeemngt extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'fname',
+        'mname',
+        'lname',
+        'add',
+        'dob',
+        'contact'
+    ];
     
 }

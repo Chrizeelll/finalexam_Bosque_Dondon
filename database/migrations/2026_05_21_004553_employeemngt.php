@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('mname');
             $table->string('lname');
             $table->string('add');
-            $table->string('dob');
+            $table->date('dob');
             $table->string('contact');
         });
     }
