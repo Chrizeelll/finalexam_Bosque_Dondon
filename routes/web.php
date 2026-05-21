@@ -26,11 +26,9 @@ Route::middleware('auth')->group(function () {
 
     // Employee routes
     Route::get('employee', [\App\Http\Controllers\employeecontroller::class, 'index'])->name('employee.index');
-
+    Route::get('employee/create', [App\Http\Controllers\employeecontroller::class, 'create'])->name('employee.create');
+    Route::post('employee', [App\Http\Controllers\employeecontroller::class, 'store'])->name('employee.store');
     
-
-
-
 
 
     //Profile routes
