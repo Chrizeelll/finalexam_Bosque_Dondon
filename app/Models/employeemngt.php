@@ -8,7 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class employeemngt extends Model
 {
     use HasFactory;
-
+    protected $table = 'employee';
+    protected $primarykey = 'id';
     protected $fillable = [
         'fname',
         'mname',
